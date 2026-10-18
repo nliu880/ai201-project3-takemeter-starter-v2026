@@ -55,11 +55,11 @@ whether you hit them:
 
 <!-- Your criterion. It must name a number. -->
 
-
+The overall accuracy of the classifier must be 0.75 or better for each seed.
 
 **Why this target:**
 
-
+The classifier must have an accuracy of 0.75 or better. With three labels, random guessing would have an accuracy of 0.33, so my required benchmark is more than double that.
 
 ---
 
@@ -67,11 +67,11 @@ whether you hit them:
 
 <!-- Your criterion. -->
 
-
+The F1 score for the least common label should be greater than 0.6 across all three tests. 
 
 **Why this target:**
 
-
+The data with the least common label will have the greatest variation in F1 score, as stated above. An F1 score for three labels with random guessing should be 0.33; even with the least amount of training exmaples, I want my classifier to be significantly better than a random guess. 
 
 ---
 
@@ -79,11 +79,11 @@ whether you hit them:
 
 <!-- Your criterion. -->
 
-
+The weighted F1 score across all three classes (and each of the three test seeds) should be above 0.75. 
 
 **Why this target:**
 
-
+A weighted score takes into consideration class imbalance. It still acts as an indicator of the overall precision and recall of each class, even if it isn't a true blend of the two.
 
 ---
 
@@ -91,11 +91,11 @@ whether you hit them:
 
 <!-- Your criterion. -->
 
-
+No label takes up more than 50% of the training data each seed.
 
 **Why this target:**
 
-
+I don't expect my data classes to be balanced, but I also don't expect an extreme overwhelming of one class. I expect my training data to reflect the label balances and I will also do my part in ensuring this when selecting my training data.
 
 ---
 
@@ -103,11 +103,11 @@ whether you hit them:
 
 <!-- Your criterion. -->
 
-
+The confidence score on a false negative should be under 0.90 each time, in each seed. 
 
 **Why this target:**
 
-
+Classifiers are often overconfident (scoring near 1.0 due to the function shape), so we want to see them less confident on false negative decisions.
 
 ---
 
