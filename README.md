@@ -57,7 +57,7 @@
 ### `lore_discussion`
 
 **Definition:**
-This is a post discussing background lore and theories of in game content. 
+This is a post discussing background lore of in game content. 
 
 **Example 1:**
 > [Personally, I've recently been looking a lot into Zongli's lore, because i think he just knows too many secrets.](https://www.reddit.com/r/Genshin_Impact/s/kRyIoFvOsf)
@@ -79,7 +79,7 @@ These are posts discussing how to build teams or maximize damage output from cha
 ### `ingame_mechanics`
 
 **Definition:**
-These posts discuss in game mechanics, such as puzzles, domain/materials collecting, map exploration, etc.
+These posts discuss in game mechanics, such as puzzles, materials collection, map exploration, etc.
 
 **Example 1:**
 > [How rare are these drops?: The first image was 40 resin (double) and the second image was a transient (60) resin (triple) How rare is it for these to be the drops for each respectively? I’m just curious if they are pretty uncommon or I’m just unlucky to not see these drop as I usually get a couple blues and greens and the occasional purple.](https://www.reddit.com/r/Genshin_Impact/s/WqsJSk45xC)
