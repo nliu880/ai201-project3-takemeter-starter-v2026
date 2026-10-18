@@ -54,35 +54,49 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `lore_discussion`
 
 **Definition:**
+This is a post discussing background lore and theories of in game content. 
 
 **Example 1:**
->
+> [Personally, I've recently been looking a lot into Zongli's lore, because i think he just knows too many secrets.](https://www.reddit.com/r/Genshin_Impact/s/kRyIoFvOsf)
 
 **Example 2:**
->
+> [ Would the Hexenzirkel protect Rhinedottir?: I've been thinking about this since finishing the latest archon quest. If Rhinedottir found herself in a similar situation to Ronova, that being vulnerable and about to be killed. Either by the fatui, Dainsleif or even the Traveler, would Alice and the other witches intervene to save her? It really surprised that Rhinedottir even after becoming a shade still sees herself as Mage R, which probably means that she still considers herself a Hexenzirkel witch. Also despite the other witches rarely talking about her, from what they have said they definitely still see her as a friend and member of the group. Alice especially doesn't seem like someone who would ignore a close friend in a dire situation. I personally think if Rhinedottir was about to be struck down that Alice would appear and save her. But I also don't think that Rhinedottir would ever let herself be put in that position, she's way more likely to just betray the Heavenly Principles and side with the Tsaritsa if given the opportunity.](https://www.reddit.com/r/Genshin_Impact/s/XOaaghANCE)
 
-### `label_two`
+### `theorycrafting`
 
 **Definition:**
+These are posts discussing how to build teams or maximize damage output from characters. 
 
 **Example 1:**
->
+> [Struggling to decide if I should get Escoffier: I’m a Wriothesley main and have been for some time now. I mostly play him in Freeze teams and so naturally Escoffier would be an upgrade for that. My current team is C1R0 Wriothesley/C0R1 Furina/C0R0 Vodyanitsa/C0R0 Xilonen, and I do get good numbers with it. My problem arises from the fact that I don’t like to spend too much (usually only the Welkin) and that there might be characters getting reruns in the near future that I want. I’m not that fussed about Escoffier’s character; if I were to pull her it would be purely for utility. So I suppose my question is; is she enough of an upgrade to warrant pulling her or not? Also, I should probably mention that I don’t have Skirk and am not interested in getting her, so she wouldn’t have any value there.](https://www.reddit.com/r/Genshin_Impact/s/DUKU17FFVA)
 
 **Example 2:**
->
+> [what's the best rotation for vesna c1?: team is c1 vesna, c0 odette, c2 vodyanitsa, c6 faruzan i already have a rotation figured out for odette, vodyanitsa, and faruzan, but i'll try out any rotation suggestions i can't really find any rotations that increase my damage at all, and i'm mainly looking for rotations that will work at full power 2 rotations in a row, because some rotations i've found are really fast and don't give faruzan's burst enough time to recharge also have a nice day everyone, and i wish you all the luck i had of 6 50/50s won in a row with avg 40 pity](https://www.reddit.com/r/Genshin_Impact/s/szfoJsNVRM)
+
+### `ingame_mechanics`
+
+**Definition:**
+These posts discuss in game mechanics, such as puzzles, domain/materials collecting, map exploration, etc.
+
+**Example 1:**
+> [How rare are these drops?: The first image was 40 resin (double) and the second image was a transient (60) resin (triple) How rare is it for these to be the drops for each respectively? I’m just curious if they are pretty uncommon or I’m just unlucky to not see these drop as I usually get a couple blues and greens and the occasional purple.](https://www.reddit.com/r/Genshin_Impact/s/WqsJSk45xC)
+
+**Example 2:**
+> [Primo farm: Guys how do you farm for primos after completing almost whole map as f2p player?? I genuinely dont know what to do anymore atp(all of my sub areas are 100% as well). I know theres more to farm even after getting it to 100% from hidden chest but im too lazy to watch tutorials rn.](https://www.reddit.com/r/Genshin_Impact/s/lQHRHZl336)
 
 ### The hardest boundary
 
 **Which two labels:**
+I expect `theorycrafting` and `ingame_mechanics` to be mixed up between the two. Certain in game puzzles may require specific team compositions to solve them, which may sound a lot like `theorycrafting`, which is instead aimed at maximizing damage output. 
 
 **The decision rule I used every time:**
 <!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
      if the tone is heated." -->
 
-
+If the post names a specific in-game puzzle not related to endgame content (Spiral Abyss, Imaginarium Theater, Stygian Onslaught), the post is considered `ingame_mechanics`. Otherwise, the post is considered `theorycrafting`.
 
 ---
 
@@ -92,8 +106,10 @@
      cases. -->
 
 **Where the posts came from:**
+Posts were selected from r/GenshinImpact on Reddit. 
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
+**How I labelled them:** 
+<!-- Cold first? Pre-labelled with AI and corrected?
 Say so plainly — the disclosure is required, not penalised. -->
 
 **Counts per label:**
