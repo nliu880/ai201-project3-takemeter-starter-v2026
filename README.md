@@ -208,15 +208,15 @@ Write that down now — next unit it's a diagnosis, not a surprise.
 
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I used AI for feedback on my labels as suggested in the guidelines (create posts that might span two labels).
+- *What came back:* The AI created several posts that might sit on the boundary of two labels.
+- *What I changed:* I rephrased some of the label definitions and thought about what I had or hadn't considered part of some label. I edited my label definitions to better accomodate and differentiate between posts. 
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I used the AI to push back against my criteria. 
+- *What came back:* The AI pointed out which criteria might be easily passed and which might be impossible.
+- *What I changed:* I changed the wording and reasoning on some of the criteria to better explain the logic behind them. I also took into consideration how certain scoring criteria worked with finetuned models, and made adjustments based off that. 
 
 **Pre-labelling disclosure:**
 
