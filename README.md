@@ -106,21 +106,22 @@ If the post names a specific in-game puzzle not related to endgame content (Spir
      cases. -->
 
 **Where the posts came from:**
+
 Posts were selected from r/GenshinImpact on Reddit. 
 
 **How I labelled them:** 
 <!-- Cold first? Pre-labelled with AI and corrected?
 Say so plainly — the disclosure is required, not penalised. -->
 
-I just labeled them all myself. The hard part was finding 200 posts and formatting them correctly. Labeling was fairly straightforward. 
+I just labeled them all myself. The hard part was finding 200 posts and formatting them correctly. Moving the `.csv` to a spreadsheet halfway helped with formatting. Labeling was fairly straightforward from that point. 
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| `theorycrafting` | 94 | 47% |
+| `game_mechanics` | 67 | 33.5% |
+| `lore` | 39 | 19.5% |
 | **Total** |  | 100% |
 
 **Three hard cases**
@@ -130,14 +131,18 @@ I just labeled them all myself. The hard part was finding 200 posts and formatti
 
 **1.**
 > *The post:*
+>
 > [ catching up and *wow* moongazer  i fell behind after natlan, just too much real life. kept saying "i should catch up" for nearly 2 years and the 5* selector finally put the last wedge in the door for me to get back in, did all of nodkrai (also a fantastic binge), character story quests, permanent events, and then this quest. and what a quest, i felt like a little kid again, it was pure magic the whole way through. whoever decided genshin was going to the moon this summer deserves a raise alongside the background architects and composers. i don't know how it is for the average player, but i've always found the theme of sending messages through space so existentially romantic, the warm idea that you want another species smart enough to understand the size of the universe and how "lonely" any given planet or species really is to know that they aren't actually alone (let's just ignore the "oh btw there's a darkness devouring the galaxy gl hf" bit for a sec). AND THE SIBLING LORE AT THE END?!?!?! i would've never expected that out of HYV's big 3 games genshin would be the one to give me the best ship launch sequence, to showcase the vastness of space, to have a low-grav surface impact, to play with 4 levels of gravity, to scratch that scifi itch that so few games do... i did however, expect them to bring me yet another mascot character overflowing with selfless noble purpose, they're really good at that one... anyways i don't really have an essay or anything just wanted to make a little message of appreciation for an amazing night. i hope everyone else found this quest and area at least half as magical as i did. you are not alone 👍](https://www.reddit.com/r/Genshin_Impact/s/KE93dWoOBx)
-> *Could have been:* `game_mechanics`. There are a few lines discussing in-game mechanics (background music, design, unique movement environments).
+>
+> *Could have been:* 
+>`game_mechanics`. There are a few lines discussing in-game mechanics (background music, design, unique movement environments).
 >
 > *I chose, because:* `lore`. The overall focus of this post is appreciation for this questline and the lore/background context around it.
 
 **2.**
 > *The post:* 
-[Two unrelated questions: 1. In nod krai there are little black speech bubbles with an exclamation point, what are they? I did one and got a chest, but others like the sugar sculpture seller don't seem to do anything. Am I missing something? 2. When should I do the zibai and Sandrone event/story quests? I skipped nod krai story for the free 5*, and don't want to accidentally spoil myself (any more) if it's possible to play them too early.](https://www.reddit.com/r/Genshin_Impact/comments/1x85isp/comment/phg1y60)
+>
+> [Two unrelated questions: 1. In nod krai there are little black speech bubbles with an exclamation point, what are they? I did one and got a chest, but others like the sugar sculpture seller don't seem to do anything. Am I missing something? 2. When should I do the zibai and Sandrone event/story quests? I skipped nod krai story for the free 5*, and don't want to accidentally spoil myself (any more) if it's possible to play them too early.](https://www.reddit.com/r/Genshin_Impact/comments/1x85isp/comment/phg1y60)
 >
 > *Could have been:* `lore`. The second question refers to some quest material that would be classified under lore.
 >
@@ -145,7 +150,8 @@ I just labeled them all myself. The hard part was finding 200 posts and formatti
 
 **3.**
 > *The post:* 
-[The global Buffs from Theater and SO  Do the global buffs from Theater and SO affect my characters also in Milliastra? in Dummy test? The oens tha buffs PS%, ATK% DEF% by 20% and the SO ones? Sometimes in the Dummy test I reach a score, the after sometimes (day or weeks), I reach a different score (10k of difference sometimes). Obviously I do at least 3 run each test, and I check if I changed Builds/piece on my characters.](https://www.reddit.com/r/Genshin_Impact/s/UETjn7QKKU)
+>
+> [The global Buffs from Theater and SO  Do the global buffs from Theater and SO affect my characters also in Milliastra? in Dummy test? The oens tha buffs PS%, ATK% DEF% by 20% and the SO ones? Sometimes in the Dummy test I reach a score, the after sometimes (day or weeks), I reach a different score (10k of difference sometimes). Obviously I do at least 3 run each test, and I check if I changed Builds/piece on my characters.](https://www.reddit.com/r/Genshin_Impact/s/UETjn7QKKU)
 >
 > *Could have been:* `theorycrafting`. The post discusses buffs from endgame battle content.
 >
@@ -158,15 +164,35 @@ I just labeled them all myself. The hard part was finding 200 posts and formatti
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
 **Base model:**
+distilbert-base-uncased
 
 **Settings:** <!-- epochs, learning rate, batch size, seed -->
+EPOCHS = 3
+LEARNING_RATE = 2e-5
+BATCH_SIZE = 16
 
 **Anything I changed from the defaults, and why:**
+
+I did not change anything.
 
 **Split sizes:** <!-- train / val / test, and per-label counts in the test
 split. If a label had fewer than about 8 in test, say so — it explains a lot
 of next unit's variance. -->
 
+train 139, val 31, test 30
+
+|label        |    train | val | test|
+|---|---|---|---|
+|lore         |      27  |  6  |   6|
+|theorycrafting  |   65  | 15  |  14|
+|game_mechanics   |  47  | 10  |  10|
+
+[note] 'lore' has only 6 examples in the test split.
+
+A metric computed on that few examples moves a lot between seeds.
+Write that down now — next unit it's a diagnosis, not a surprise.
+
+**Above taken from *Section 3. Split* output.**
 
 
 ---
@@ -194,7 +220,7 @@ of next unit's variance. -->
 
 **Pre-labelling disclosure:**
 
-I did not prelabel anything with an AI tool. It was more convenient for me to label posts as I entered them into the `labels.csv`.
+I did not prelabel anything with an AI tool. It was more convenient for me to label posts when working with them as a spreadsheet.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
