@@ -54,7 +54,7 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `lore_discussion`
+### `lore`
 
 **Definition:**
 This is a post discussing background lore of in game content. 
@@ -68,7 +68,7 @@ This is a post discussing background lore of in game content.
 ### `theorycrafting`
 
 **Definition:**
-These are posts discussing how to build teams or maximize damage output from characters. 
+These are posts discussing character kit design, how to build teams or characters, or maximize damage output from characters. 
 
 **Example 1:**
 > [Struggling to decide if I should get Escoffier: I’m a Wriothesley main and have been for some time now. I mostly play him in Freeze teams and so naturally Escoffier would be an upgrade for that. My current team is C1R0 Wriothesley/C0R1 Furina/C0R0 Vodyanitsa/C0R0 Xilonen, and I do get good numbers with it. My problem arises from the fact that I don’t like to spend too much (usually only the Welkin) and that there might be characters getting reruns in the near future that I want. I’m not that fussed about Escoffier’s character; if I were to pull her it would be purely for utility. So I suppose my question is; is she enough of an upgrade to warrant pulling her or not? Also, I should probably mention that I don’t have Skirk and am not interested in getting her, so she wouldn’t have any value there.](https://www.reddit.com/r/Genshin_Impact/s/DUKU17FFVA)
@@ -76,7 +76,7 @@ These are posts discussing how to build teams or maximize damage output from cha
 **Example 2:**
 > [what's the best rotation for vesna c1?: team is c1 vesna, c0 odette, c2 vodyanitsa, c6 faruzan i already have a rotation figured out for odette, vodyanitsa, and faruzan, but i'll try out any rotation suggestions i can't really find any rotations that increase my damage at all, and i'm mainly looking for rotations that will work at full power 2 rotations in a row, because some rotations i've found are really fast and don't give faruzan's burst enough time to recharge also have a nice day everyone, and i wish you all the luck i had of 6 50/50s won in a row with avg 40 pity](https://www.reddit.com/r/Genshin_Impact/s/szfoJsNVRM)
 
-### `ingame_mechanics`
+### `game_mechanics`
 
 **Definition:**
 These posts discuss in game mechanics, such as puzzles, materials collection, map exploration, etc.
@@ -90,13 +90,13 @@ These posts discuss in game mechanics, such as puzzles, materials collection, ma
 ### The hardest boundary
 
 **Which two labels:**
-I expect `theorycrafting` and `ingame_mechanics` to be mixed up between the two. Certain in game puzzles may require specific team compositions to solve them, which may sound a lot like `theorycrafting`, which is instead aimed at maximizing damage output. 
+I expect `theorycrafting` and `game_mechanics` to be mixed up between the two. Certain in game puzzles may require specific team compositions to solve them, which may sound a lot like `theorycrafting`, which is instead aimed at maximizing damage output. 
 
 **The decision rule I used every time:**
 <!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
      if the tone is heated." -->
 
-If the post names a specific in-game puzzle not related to endgame content (Spiral Abyss, Imaginarium Theater, Stygian Onslaught), the post is considered `ingame_mechanics`. Otherwise, the post is considered `theorycrafting`.
+If the post names a specific in-game puzzle not related to endgame content (Spiral Abyss, Imaginarium Theater, Stygian Onslaught), the post is considered `game_mechanics`. Otherwise, the post is considered `theorycrafting`.
 
 ---
 
@@ -111,6 +111,8 @@ Posts were selected from r/GenshinImpact on Reddit.
 **How I labelled them:** 
 <!-- Cold first? Pre-labelled with AI and corrected?
 Say so plainly — the disclosure is required, not penalised. -->
+
+I just labeled them all myself. The hard part was finding 200 posts and formatting them correctly. Labeling was fairly straightforward. 
 
 **Counts per label:**
 
@@ -128,24 +130,26 @@ Say so plainly — the disclosure is required, not penalised. -->
 
 **1.**
 > *The post:*
+> [ catching up and *wow* moongazer  i fell behind after natlan, just too much real life. kept saying "i should catch up" for nearly 2 years and the 5* selector finally put the last wedge in the door for me to get back in, did all of nodkrai (also a fantastic binge), character story quests, permanent events, and then this quest. and what a quest, i felt like a little kid again, it was pure magic the whole way through. whoever decided genshin was going to the moon this summer deserves a raise alongside the background architects and composers. i don't know how it is for the average player, but i've always found the theme of sending messages through space so existentially romantic, the warm idea that you want another species smart enough to understand the size of the universe and how "lonely" any given planet or species really is to know that they aren't actually alone (let's just ignore the "oh btw there's a darkness devouring the galaxy gl hf" bit for a sec). AND THE SIBLING LORE AT THE END?!?!?! i would've never expected that out of HYV's big 3 games genshin would be the one to give me the best ship launch sequence, to showcase the vastness of space, to have a low-grav surface impact, to play with 4 levels of gravity, to scratch that scifi itch that so few games do... i did however, expect them to bring me yet another mascot character overflowing with selfless noble purpose, they're really good at that one... anyways i don't really have an essay or anything just wanted to make a little message of appreciation for an amazing night. i hope everyone else found this quest and area at least half as magical as i did. you are not alone 👍](https://www.reddit.com/r/Genshin_Impact/s/KE93dWoOBx)
+> *Could have been:* `game_mechanics`. There are a few lines discussing in-game mechanics (background music, design, unique movement environments).
 >
-> *Could have been:*
->
-> *I chose, because:*
+> *I chose, because:* `lore`. The overall focus of this post is appreciation for this questline and the lore/background context around it.
 
 **2.**
-> *The post:*
+> *The post:* 
+[Two unrelated questions: 1. In nod krai there are little black speech bubbles with an exclamation point, what are they? I did one and got a chest, but others like the sugar sculpture seller don't seem to do anything. Am I missing something? 2. When should I do the zibai and Sandrone event/story quests? I skipped nod krai story for the free 5*, and don't want to accidentally spoil myself (any more) if it's possible to play them too early.](https://www.reddit.com/r/Genshin_Impact/comments/1x85isp/comment/phg1y60)
 >
-> *Could have been:*
+> *Could have been:* `lore`. The second question refers to some quest material that would be classified under lore.
 >
-> *I chose, because:*
+> *I chose, because:* `game_mechanics`. The first question discusses in game puzzles. The second question comes about as a consequence of a game mechanic, but this is ultimately classified based on the first question.
 
 **3.**
-> *The post:*
+> *The post:* 
+[The global Buffs from Theater and SO  Do the global buffs from Theater and SO affect my characters also in Milliastra? in Dummy test? The oens tha buffs PS%, ATK% DEF% by 20% and the SO ones? Sometimes in the Dummy test I reach a score, the after sometimes (day or weeks), I reach a different score (10k of difference sometimes). Obviously I do at least 3 run each test, and I check if I changed Builds/piece on my characters.](https://www.reddit.com/r/Genshin_Impact/s/UETjn7QKKU)
 >
-> *Could have been:*
+> *Could have been:* `theorycrafting`. The post discusses buffs from endgame battle content.
 >
-> *I chose, because:*
+> *I chose, because:* `game_mechanics`. The post is ultimately asking if the bonuses from endgame content carry over into other material in game, making it a post about game mechanics, not improving damage or building teams.
 
 ---
 
@@ -189,6 +193,8 @@ of next unit's variance. -->
 - *What I changed:*
 
 **Pre-labelling disclosure:**
+
+I did not prelabel anything with an AI tool. It was more convenient for me to label posts as I entered them into the `labels.csv`.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 

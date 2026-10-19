@@ -5,6 +5,6 @@
 #
 # Delete the examples below and put yours in.
 
-lore_discussion: This is a post discussing background lore of in game content. 
-theorycrafting: These are posts discussing how to build teams or maximize damage output from characters. 
-ingame_mechanics: These posts discuss in game mechanics, such as puzzles, materials collection, map exploration, etc.
+lore: This is a post discussing background lore of in game content. 
+theorycrafting: These are posts discussing character kit design, how to build teams or characters, or maximize damage output from characters.
+game_mechanics: These posts discuss in game mechanics, such as puzzles, materials collection, map exploration, etc.
