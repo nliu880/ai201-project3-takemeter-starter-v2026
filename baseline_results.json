@@ -1,0 +1,184 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.3,
+    "f1_macro": 0.275058275058275,
+    "per_label": {
+      "game_mechanics": {
+        "precision": 1.0,
+        "recall": 0.3,
+        "f1": 0.4615384615384615,
+        "support": 10
+      },
+      "lore": {
+        "precision": 0.2222222222222222,
+        "recall": 1.0,
+        "f1": 0.3636363636363636,
+        "support": 6
+      },
+      "theorycrafting": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 14
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "I finally caught up  Exams and life kicking me around like a ball , anyway i finally got it after what ? Like a year i suppose it seems to be a gift from coulmbina , thank you sweetie i will cherish it Im kinda surprised that it was auto claimed too due to the fact that the storyline portrayed columbina giving it to us",
+      "gold": "game_mechanics",
+      "predicted": "lore"
+    },
+    {
+      "text": "Abyss and Fearless should not require Mitya's C1 at all, unless he's somehow really bad on release. More characters sounds like a better idea for a new player, especially with Skirk already. If you wanna be a Mitya main, just save up to C2R1 him on first rerun, after you're sure you like him, how he feels to play, and will stick with him long-term.",
+      "gold": "theorycrafting",
+      "predicted": "lore"
+    },
+    {
+      "text": "Are there any time-limited rewards attached to Vodyanitsa and Vesna's story quests? Or is it only the archon quest",
+      "gold": "game_mechanics",
+      "predicted": "lore"
+    },
+    {
+      "text": "Sure, I did first half with a Mizuki stellar swirl team, and I did the second half with an Ayaka freeze team. Quite easy on both sides for both teams.",
+      "gold": "theorycrafting",
+      "predicted": "lore"
+    },
+    {
+      "text": "Struggling to decide if I should get Escoffier: I\u2019m a Wriothesley main and have been for some time now. I mostly play him in Freeze teams and so naturally Escoffier would be an upgrade for that. My current team is C1R0 Wriothesley/C0R1 Furina/C0R0 Vodyanitsa/C0R0 Xilonen, and I do get good numbers with it. My problem arises from the fact that I don\u2019t like to spend too much (usually only the Welkin) and that there might be characters getting reruns in the near future that I want. I\u2019m not that fussed about Escoffier\u2019s character; if I were to pull her it would be purely for utility. So I suppose my question is; is she enough of an upgrade to warrant pulling her or not? Also, I should probably mention that I don\u2019t have Skirk and am not interested in getting her, so she wouldn\u2019t have any value there.",
+      "gold": "theorycrafting",
+      "predicted": "lore"
+    },
+    {
+      "text": "i need help with a marker from natlan treasure compass, it is in tequemecan valley down the waterfall next to the big blue tree(i would attach a picture but i cant here ?) i ran around and couldnt figure it out if smbd could help me i would really appreciate it \ud83e\udd79",
+      "gold": "game_mechanics",
+      "predicted": "game_mechanics"
+    },
+    {
+      "text": "Who is the new event sword good on?",
+      "gold": "theorycrafting",
+      "predicted": "lore"
+    },
+    {
+      "text": "I accidentally got Azurelight while having no Skirk neither Vesna. Is this weapon any good on other characters? I'm fairly new and don't have many characters, it'd be a shame if my first 5* weapon would just collect dust in my inventory",
+      "gold": "theorycrafting",
+      "predicted": "lore"
+    },
+    {
+      "text": "About to do imaginarium theater, was looking for supporting cast. How viable is this?",
+      "gold": "theorycrafting",
+      "predicted": "lore"
+    },
+    {
+      "text": "skyward gives slightly more atk since memory of dust stacks only last 8s and she isnt considered protected by a shield when off field",
+      "gold": "theorycrafting",
+      "predicted": "lore"
+    },
+    {
+      "text": "If you enable Focused Experience Mode on the Nod Krai quest, that will should make sure the Nod Krai quest takes priority over Snezhnaya when they share areas. If not, the start of Snezhnaya is like 2 mins max before moving the quest out of Nod Krai, though unfortunately a somewhat spoilery 2 mins.",
+      "gold": "game_mechanics",
+      "predicted": "lore"
+    },
+    {
+      "text": "Does everyone in teyvat know we are the fourth descender or do only special people know as a secret?",
+      "gold": "lore",
+      "predicted": "lore"
+    },
+    {
+      "text": "Sayu on Wheelchairs Spiral Abyss 7.1 ver",
+      "gold": "theorycrafting",
+      "predicted": "lore"
+    },
+    {
+      "text": "Do I need to do a specific quest to unlock Guiztli Path in Natlan?",
+      "gold": "game_mechanics",
+      "predicted": "lore"
+    },
+    {
+      "text": "Do some anecdotes in Travelers' Tales not count towards reward? Wiki says there's currently 156 anecdotes, I have 154 collected, yet my primos progress is 2/10, not 4/10",
+      "gold": "game_mechanics",
+      "predicted": "lore"
+    },
+    {
+      "text": "varesa or clorinde is always the answer unless nefer player with nilou alr in roster varesa could go with iansan bennett xianyun until chevreuse clorinde could go iansan mav C6sara/bennett until chev but clorinde could also go fischl nahida sucrose after we get chevreuse though if you are planning to play mavuika in a different team like maybe mona suc ororon/kachina then varesa would be the better choice as she can use bennett last slot of chev team cuz she can freely swap in an out while clorinde without durin would be stuck with...pmc or xiangling",
+      "gold": "theorycrafting",
+      "predicted": "lore"
+    },
+    {
+      "text": "Soooo I just got Aquila Favonia (5* standard banner sword, the one that buffs phys damage). It's hot garbage, right? I tried looking up discussions about the sword and all I found so far was people being mad that they received the sword as a drop and a couple of people from ~5 years ago saying it's okay-ish on Bennett. Is it okay-ish for Bennett these days? Is it better than Fav Sword / Sacrificial Sword? Any suggestions are welcome because I got this on pity and I'm properly mad",
+      "gold": "theorycrafting",
+      "predicted": "lore"
+    },
+    {
+      "text": "Vesna would replace Mizuki in the exact same team, so if you plan to use Mizuki, you don't need Vesna. Vodyanitsa is built for Stellar Swirl and Freeze. Mizuki and Ayaka could use her.",
+      "gold": "theorycrafting",
+      "predicted": "lore"
+    },
+    {
+      "text": "Flew into a moving wall at the temple of space, im genuinely trapped! Also map is disabled in this quest, like what do I do \ud83d\ude2d",
+      "gold": "game_mechanics",
+      "predicted": "game_mechanics"
+    },
+    {
+      "text": "Yo Paimon \ud83d\udc94 But maybe the king in question is the Traveller themself? Like the lore shows that the twins were sent to Tevyat by a King right? I'm not really sure, I don't really remember the lore well",
+      "gold": "lore",
+      "predicted": "lore"
+    },
+    {
+      "text": "Give it to Odette and it is a very good weapon for her. If she has enough energy to use her burst, her special skill can do even more damage than her own sig weapon and 40% better than r1 emberwell.",
+      "gold": "theorycrafting",
+      "predicted": "lore"
+    },
+    {
+      "text": "Four Successor Candidates of Ronova, the Ruler of Death \u2014 Bearer of the Lone Butterfly\u2019s Legacy \u2014 The Heir of the Crimson Moon Dynasty \u2014 The Azure Flame Guides Fallen Souls Across the Icy Plains \u2014 God of Eternity. Who do you think is the best candidate?",
+      "gold": "lore",
+      "predicted": "lore"
+    },
+    {
+      "text": "How fast does cryo traveller stack stack up in ssw teams? Assuming if you just e and swap out to anemo.",
+      "gold": "theorycrafting",
+      "predicted": "lore"
+    },
+    {
+      "text": "The Tsaritsa is a hypocrite, and this is intentional. This is a book from from the Luna patches. What she did here was pretty cold, but what is more interesting is that this is basically mirroring what the HP did. Forcefully taking territory, threatening annihilation if they don't stop rebelling, and stripping authority. So if you are wondering why some of her other dialogue seems hypocritical, you would be correct. The traveler is currently not in a position to directly call this out to her face, but it seems the Tsaritsa's big flaw is that she is just becoming another HP and doesn't realize it.",
+      "gold": "lore",
+      "predicted": "lore"
+    },
+    {
+      "text": "So I just finished the recent Moonchase story and it was awesome. I was just a bit confused by what Lan Yan\u2019s spell at the end did. Apparently it helped calm down all the swallows so they\u2019d actually return and nest, but also pulled on the power of every Wind Reader style exorcism spell ever cast to purge monsters? And also helped Wind Reader find peace in some way? If someone could explain what happened, that would be great.",
+      "gold": "lore",
+      "predicted": "lore"
+    },
+    {
+      "text": "how do I trigger the Sunny Summer Fontinalia quest? I wasn't playing when the event happened",
+      "gold": "game_mechanics",
+      "predicted": "lore"
+    },
+    {
+      "text": "I just finished the Journey Home Ineffa quest and I can't find how to start Nod Krai at all. As we all know I can't start it from the events menu anymore either \ud83e\udee0 can anyone help? The only quests that pop up are The Chasm and The Night- Bird Falls at the Curtain's Call. Do I need to complete any of those beforehand?",
+      "gold": "game_mechanics",
+      "predicted": "lore"
+    },
+    {
+      "text": "Use whatever gets you the clear. If you feel like Ineffa\u2019s stronger with Vodya and your Mizuki is fine without her just play them together. I think Aino and Bina are still  Ineffa\u2019s best hydro partners though",
+      "gold": "theorycrafting",
+      "predicted": "lore"
+    },
+    {
+      "text": "[Theory] Traveler is being manipulated into hating the Heavenly Principle and allying with Fatui and Tsaritsa.",
+      "gold": "lore",
+      "predicted": "lore"
+    },
+    {
+      "text": "I'm currently doing chapter 2, act 3 and i'm having trouble activating the three electro elemental monuments on the \"investigate the ancient ruins\" area thingy. I'm at a loss. Even using regular melee electro characters take too long. I've even looked on tutorials and almost everybody uses an electro-bow character, which is something i don't have. Is there ANY alternative i could use to activate them in time??",
+      "gold": "game_mechanics",
+      "predicted": "game_mechanics"
+    }
+  ]
+}
