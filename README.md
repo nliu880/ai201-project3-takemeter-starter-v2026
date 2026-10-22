@@ -42,6 +42,7 @@
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
+This is a text classifier for posts in r/GenshinImpact on Reddit. Posts are sorted into `theorycrafting`, `lore`, and `game_mechanics`. `theorycrafting` is for posts surrounding team composition, character damage output, or character building. `lore` is for posts discussing game lore and predicting future events based off that; `game_mechanics` is for discussion surrounding puzzles, materials, map exploration, etc.
 
 
 ---
@@ -236,20 +237,23 @@ I did not prelabel anything with an AI tool. It was more convenient for me to la
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.300 | 0.467 | +0.167 |
+| Macro F1 | 0.275 | 0.212 | -0.063 |
+| F1 — `game_mechanics` | 0.462 | 0.000 | -0.462 |
+| F1 — `lore` | 0.364 | 0.000 | -0.364 |
+| F1 — `theorycrafting` | 0.000 | 0.636 | +0.636 |
 
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
+     
+I believe my trained model will perform better in the `theorycrafting` label, as this is where the language used becomes more specific to the corpus community.
 
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added
      nothing — and that is a real finding, not a failure. Say it plainly. -->
 
-
+The overall accuracy improved a little from what you'd expect from random guessing, indicating that something was learned during the previous training, if minimally. The F1 score on my predicted label `theorycrafting` did improve, while the F1 score for my other labels got worse (to 0). An F1 score of 0 for those labels tells me that there were no True Positives in my test dataset. 
 
 ---
 
