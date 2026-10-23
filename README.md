@@ -270,22 +270,34 @@ The overall accuracy improved a little from what you'd expect from random guessi
 | 4.  |  |  |  |  |  |
 | 5.  |  |  |  |  |  |
 
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.467 | 0.467 | 0.467 | 0.000 |
+| Macro F1 | 0.212 | 0.212 | 0.212 | 0.000 |
+| F1 — `lore` | 0.000 | 0.000 | 0.000 | 0.000 |
+| F1 — `theorycrafting` | 0.636 | 0.636 | 0.636 | 0.000 |
+| F1 — `game_mechanics` | 0.000 | 0.000 | 0.000 | 0.000 |
+
+This is suspiciously stable. 
+
+
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
+| true \ predicted | lore | theorycrafting | game_mechanics |
 |---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| **lore** | 0 | 6 | 0 |
+| **theorycrafting** | 0 | 14 | 0 |
+| **game_mechanics** | 0 | 10 | 0 |
 
 **My biggest off-diagonal number, and what it means:**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
 
+This is overall abysmal, but the largest mistake comes from 10 `game_mechanics` posts being labeled `theorycrafting`. Overall, it seems like everything is being labled `theorycrafting`. The model, seemingly, is just labeling every post the most common label. It seems nothing was learned except the average (mode) label.
 
 
 ---
