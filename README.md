@@ -223,6 +223,12 @@ Write that down now — next unit it's a diagnosis, not a surprise.
 
 I did not prelabel anything with an AI tool. It was more convenient for me to label posts when working with them as a spreadsheet.
 
+**Moment 3**
+
+- *What I asked for:* I used the AI to discuss the case when I disagreed with the staff labeling. 
+- *What came back:* The AI gave arguments for each label.
+- *What I changed:* I did not end up changing my decisions. The feedback from the AI was mostly about how I defined "an argument backed by a specific, checkable fact". I maintain that the facts and conclusion have to be tied together to form a cohesive argument regardless of how inflammatory the argument sounds.
+
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
      Don't fill these in during unit 5.
@@ -338,7 +344,7 @@ This is overall abysmal, but the largest mistake comes from 10 `game_mechanics` 
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** 26 / 30 = 87%
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
      stated rules beats a 95% who wrote "staff was right" nine times. Several
@@ -362,24 +368,47 @@ This is overall abysmal, but the largest mistake comes from 10 `game_mechanics` 
 
 **1.**
 > *The post:*
->
+> The club championship scoring changed in 2019 from top-6 to top-10. Since then our B team has finished above the A team twice. That's not depth improving, it's the scoring rewarding turnout.
 > *Staff said / I said:*
->
+> `analysis` / `hot_take`
 > *My call, and why:*
->
+> I thought this to be a `hot_take` since there didn't seem to be any analysis or argument that the facts were doing. It felt like two separate facts and I am unclear what the conclusion or final argument is.
 > *Which pile:*
+> I believe this belongs in Pile (c). `analysis` says that an argument has to be backed with specific facts. I do not agree that an argument backed by facts was made. The final claim, if you consider it one, isn't supported by facts, which would make it a `hot_take`.
 
 **2.**
 > *The post:*
->
+> Three of us ran the same session on the same day, different shoes, within 10 seconds of each other over 5 miles. I'm not saying shoes do nothing, but whatever they do was smaller than the noise between three people.
 > *Staff said / I said:*
->
+> `analysis` / `hot_take`
 > *My call, and why:*
->
+> This should be an `analysis` post. There are facts backing up an implied argument, that the shoes are don't do anything.
 > *Which pile:*
+> This is Pile (a), the rule did cover it.
+
+**3.**
+> *The post:*
+> Times are down about 3% since the shoe rules changed, so obviously the shoes are the whole story and the sport has a problem.
+> *Staff said / I said:*
+> `hot_take` / `analysis`
+> *My call, and why:*
+> I think this is `analysis`. The argument gains the tone of an unbased claim with "so obviously", but this doesn't change the fact that there was a fact attached. The resulting conclusion might be dubious, but it's still some analysis, albeit a poor one. 
+> *Which pile:*
+> Pile (c), there is a stated fact backing an argument, even if the argument is written to be combative and frames someone disagreeing as foolish.
+
+**4.**
+> *The post:*
+> Every injury thread on this forum is the same injury and the same three replies.
+> *Staff said / I said:*
+> `hot_take` / `reaction`
+> *My call, and why:*
+> I think this still belongs in `reaction`, as it is reacting to the contents of the forum.
+> *Which pile:*
+> Pile (c). To a reader, this post is clearly reacting to the contents of the forum. `hot_takes`, as unsupported claims, can also be a response to something, a `reaction`, so it is a little unclear. 
 
 **What the pattern in my disagreements tells me:**
 
+I seem to have a different standard for what constitutes a properly backed claim/argument. This matters in this taxonomy labeling, where what defines a well argued claim matters. This does not matter as much in my own corpus labeling, where the content of the post is more important than the manner in which it is delivered.
 
 
 ---
