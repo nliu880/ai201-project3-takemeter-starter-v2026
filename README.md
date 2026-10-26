@@ -451,11 +451,15 @@ The increased number of epochs helped, in that my results are no longer suspicio
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
 
+One of my missed criterions has to do with the way the F1 score is collated over three labels, macro versus weighted. This would be an easy fix; I did not implement it as I was focused on fixing the training process first.
 
+The other three missed criterion all have to do with accuracies/how well the model performed over **all three** seeds. For two of the criterions, two of three seeds performed well while the other didn't, indicating an unfortunate split in data over that seed. This could be helped by more balanced training data (more data for the least common label `lore`). As for my last criterion regarding confidence, I suspect this is something that could have increased with more training epochs, although I am not sure. In any case, I was more focused on getting my classifier to produce useful results this time as opposed to it's previous state of having learned minimally. 
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
 <!-- Two sentences. Your confusion matrix is the evidence. -->
+
+The gap in the after-fix classifier is between the `theorycrafting` and `game_mechanics` labels. This suggests that my labeling definitions could be tightened up/rephrased to truly capture my intent since the model is confusing them.
 
 
 
