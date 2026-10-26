@@ -99,7 +99,7 @@ I don't expect my data classes to be balanced, but I also don't expect an extrem
 
 ---
 
-## 5.
+## 5. (REPLACED)
 
 <!-- Your criterion. -->
 
@@ -109,6 +109,13 @@ The confidence score on a false negative should be under 0.90 each time, in each
 
 Classifiers are often overconfident (scoring near 1.0 due to the function shape), so we want to see them less confident on false negative decisions.
 
+## 5. (NEW)
+
+The mean confidence when the classifier is right is over 80% in all three seeds.
+
+**Why this target:**
+
+Now working with the provided code and benchmarks, I want the classifier to have a mean confindence of ≥ 80% when labeling correctly, taking into consideration the classifier's old performance.
 ---
 
 <!-- ─────────────────────────────────────────────────────────────────────────
