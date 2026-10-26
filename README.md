@@ -270,11 +270,11 @@ The overall accuracy improved a little from what you'd expect from random guessi
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. | The overall accuracy of the classifier must be 0.75 or better for each seed. | 0.467 | 0.467 | 0.467 | MISSED |
+| 2. | The F1 score for the least common label should be greater than 0.6 across all three tests. | 0.000 | 0.000 | 0.000 | 0.000| MISSED |
+| 3. | The weighted F1 score across all three classes (and each of the three test seeds) should be above 0.75. | UNKNOWN | UNKNOWN | UNKNOWN | MISSED |
+| 4. | No label takes up more than 50% of the training data each seed. | 47% |  47% |  47% | MET |
+| 5. | The confidence score on a false negative should be under 0.90 each time, in each seed. | UNKNOWN | UNKNOWN | UNKNOWN | MISSED |
 
 | Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
 |---|---|---|---|---|
@@ -315,11 +315,11 @@ This is overall abysmal, but the largest mistake comes from 10 `game_mechanics` 
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1. | The overall accuracy of the classifier must be 0.75 or better for each seed. | ≥ 0.75 | MISSED | The accuracy across each seed was 0.467, making this a clear miss. |
+| 2. | The F1 score for the least common label should be greater than 0.6 across all three tests. | ≥ 0.60 | MISSED | The F1 score for the least common label (`lore`) was 0.00 each time, another clear miss. |
+| 3. | The weighted F1 score across all three classes (and each of the three test seeds) should be above 0.75. | ≥ 0.75 | MISSED | The given code used a macro F1, not a weighted one, and I forgot to change it before running. I don't know anything about the weighted F1 in this situation, so I consider it a miss. I doubt the weighted F1 looks much better |
+| 4. | No label takes up more than 50% of the training data each seed. | ≤ 0.50 | MET | The training/validation/testing split is stratified, meaning the datasets were sampled according to the data labels. As none of the corpus labels took up more than 50% of the data, none of the training data labels would have either, marking this criteria as MET. |
+| 5. | The confidence score on a false negative should be under 0.90 each time, in each seed. | ≤ 0.90 | MISSED | The given code does not account for this target; I will likely have to either change the given code or this criteria in the future. As it stands, I don't know how it holds up, so it is considered a miss. |
 
 **Diagnoses**
 
@@ -332,7 +332,9 @@ This is overall abysmal, but the largest mistake comes from 10 `game_mechanics` 
      have that can tell a LABELLING problem from a MODEL problem, and this
      section is graded on whether you used it that way. -->
 
+I am quite frankly unsure what the cause of this might be. In the case of Criterias 3 and 5, the three seed training loop and code didn't account for things I wanted to benchmark in my criterion. Criterion 3 will be an easy fix (change the F1 type to `average` in the `evaluate` function), but fixing Criterion 5 will likely take more work. As it stands, given the overall poor performance of my classifier and the small amount of testing samples (30), I am not sure I will have enough false negatives at all to score this criteria. After rereading the `confidence_report` function, I have decided to change this criteria to one that can be more easily tested by the given functions (see `criteria.md`, and sections The Improvement and Run Log - After). 
 
+Criterion 1 and 2 are both measures of how accuracte (in different ways) the classifier is, and both tell me it is not very good. I believe the classifier is just labeling every test data the most common label (`theorycrafting`), the way you would if you had 99 red balls and one blue one in a bag and were told to guess the color of the next ball you pulled out of the bag. As both the other two labels were ignored completely, and the difference in post content should be fairly clear to a human reader, I suspect there is something about the training process that is causing the issue, and the agreement report from the previous section supports this conclusion. Staff labeling and I agreed on 26 of 30 posts, indicating that I am able to apply and stick to a label definition fairly well. Of those we disagreed on, one was my mistake and the other three I truly feel could be argued boths ways. I believe the issue may come from the current maximum token length (128); many of the posts have a word count over 100, much less token count.
 
 ---
 
@@ -423,11 +425,11 @@ I seem to have a different standard for what constitutes a properly backed claim
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1.  | The overall accuracy of the classifier must be 0.75 or better for each seed. |  |  |  |  |
+| 2.  | The F1 score for the least common label should be greater than 0.6 across all three tests. |  |  |  |  |
+| 3.  | The weighted F1 score across all three classes (and each of the three test seeds) should be above 0.75. |  |  |  |  |
+| 4.  | No label takes up more than 50% of the training data each seed. |  |  |  |  |
+| 5.  | The confidence score on a false negative should be under 0.90 each time, in each seed. |  |  |  |  |
 
 **Did it help, and how do I know:**
 
